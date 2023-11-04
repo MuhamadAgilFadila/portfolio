@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Agil Fadila</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Barlow+Semi+Condensed:wght@300;400;700&family=Poppins:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="hero-background">
+        <div class="wrapper-content">
+            <header class="primary__header">
+                <h2 class="logo">GIL</h2>
+
+                <button class="menu__toggle" aria-controls="primary__navigation" aria-expanded="false">
+                    <span class="sr-only">Menu</span>
+                </button>
+
+                <nav>
+                    <ul id="primary__navigation" class="primary__navigation" data-visible="false">
+                        <li class="navlink">
+                            <a href="#">
+                                <span aria-hidden="true">01</span>Home
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a href="#aboutMe">
+                                <span aria-hidden="true">02</span>About Me
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a href="#myProjects">
+                                <span aria-hidden="true">03</span>My Projects
+                            </a>
+                        </li>
+                        <li class="navlink">
+                            <a href="#footer">
+                                <span aria-hidden="true">04</span>Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </header>
+            <article class="hero-article">
+                <div class="intro-text">
+                    <h2>Everythings is Explainable</h2>
+                    <p>
+                        <span class="welcome-text">Welcome to my Personal Website</span>
+                        and Personaly this place gonna be My Learning Documentations of Web Development that I'd Learns
+                    </p>
+                    <button class="get-started-btn">Get Started</button>
+                </div>
+                <img class="hero-img" src="./Images/computer-vector.png" alt="Computer Vector Picture">
+            </article>
+        </div>
+    </div>
+    <div class="second-background">
+        <div class="wrapper-content">
+            <article id="aboutMe" class="second-article">
+                <div class="profile">
+                    <img src="./Images/My-Profile.jpg" alt="My Profile Photo" loading="lazy">
+                </div>
+                <div class="personal-info">
+                    <p>
+                        <span class="aboutme-text">About Me</span>
+                        <span class="name-text">Hi, Im <br> <span>Muhamad Agil Fadila</span>
+                        </span>
+                        <span class="des-text">
+                            Im an Early Self-taught front-end web developer and still learning though. so this personal
+                            blog is my very first project and im gonna share my other projects in this website. I am an
+                            Informatics Engineering Student of STMIK IKMI Unversity in Indonesia
+                        </span>
+                    </p>
+                </div>
+            </article>
+            <hr>
+            <span class="myProject-text">My Projects</span>
+            <article id="myProjects" class="my-projects">
+                <div class="mark-quote">
+                    <p> The Greatest Success Comes From The Freedom to Fail</p>
+                </div>
+                <div class="project-section">
+                    <div class="project-box"></div>
+                    <div class="project-box"></div>
+                    <div class="project-box"></div>
+                    <div class="project-box"></div>
+                </div>
+            </article>
+            <hr>
+            <footer id="footer">
+                <div class="nav-section">
+                    <p>Muhamad Agil Fadila</p>
+                    <nav class="bottom-navigation">
+                        <ul>
+                            <li>Home</li>
+                            <span>|</span>
+                            <li>About Me</li>
+                            <span>|</span>
+                            <li>My Projects</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="interaction">
+                    <p>Get in Touch</p>
+                    <form action="https://httpbin.org/post" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" name="userName" id="name" required autocomplete="name">
+                        <label for="email">Email</label>
+                        <input type="email" name="userEmail" id="email" required>
+                        <textarea name="userMessage" id="message" cols="20" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" class="send-btn">Send</button>
+                    </form>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

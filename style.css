@@ -1,0 +1,501 @@
+@font-face {
+    font-family: "Schabo Cond";
+    src: url("./fonts/schabo_cond/SCHABO-Condensed.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+
+/* sr-only: visible only for screen reader  */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+}
+
+.hero-background {
+    width: 100%;
+    height: 100vh;
+    background: rgb(16, 7, 32);
+    background: linear-gradient(45deg, rgba(16, 7, 32, 1) 26%, rgba(35, 65, 107, 1) 100%);
+    overflow: hidden;
+}
+
+.wrapper-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Primary Header */
+.primary__header,
+.primary__navigation {
+    display: flex;
+}
+
+.primary__header {
+    margin: 3rem 0 6rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.primary__header .logo {
+    font-size: 2rem;
+}
+
+.menu__toggle {
+    display: none;
+}
+
+.primary__navigation {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    gap: 4rem;
+}
+
+.primary__navigation .navlink {
+    text-wrap: nowrap;
+}
+
+.primary__navigation a > span {
+    margin-right: 0.8em;
+    font-weight: 700;
+    display: none;
+}
+
+/* Intro Article */
+
+.hero-article {
+    margin: 1em 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-family: "Schabo Cond";
+    font-weight: 300;
+    font-size: 6rem;
+    margin-bottom: 20px;
+    color: #bad7e9;
+}
+
+.intro-text p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2.5em;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.intro-text p span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    display: block;
+}
+
+.intro-text .get-started-btn {
+    border: 0;
+    width: 107px;
+    height: 37px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    background-color: #bad7e9;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.intro-text .get-started-btn:hover {
+    transform: scale(1.1);
+}
+
+.hero-article .hero-img {
+    width: 520px;
+    height: 420px;
+    /* border: 2px solid white; */
+}
+
+/* Second Article */
+
+.second-background {
+    width: 100%;
+    /* height: 100vh; */
+    background: rgb(16, 7, 32);
+    background: linear-gradient(219deg, rgba(16, 7, 32, 1) 48%, rgba(23, 34, 51, 1) 100%);
+    overflow: hidden;
+}
+
+.second-article {
+    display: flex;
+    margin-top: 5em;
+    width: 100%;
+}
+
+.profile {
+    flex-basis: 30%;
+}
+
+.profile img {
+    width: 180px;
+    border-radius: 100px;
+    border: 2px solid #bad7e9;
+}
+
+.personal-info {
+    flex-basis: 70%;
+}
+
+.aboutme-text,
+.name-text,
+.myProject-text {
+    display: block;
+    font-family: "Merriweather", serif;
+    margin-bottom: 10px;
+}
+
+.aboutme-text,
+.myProject-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    opacity: 80%;
+}
+
+.name-text {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.name-text span {
+    color: #bad7e9;
+}
+
+.personal-info .des-text {
+    font-weight: 200;
+    font-size: 1.1rem;
+    opacity: 80%;
+}
+
+hr {
+    margin: 5em 0 2em 0;
+}
+
+/* My Projects Section */
+
+.my-projects {
+    display: flex;
+    margin-top: 2em;
+    /* height: 100vh; */
+}
+
+.mark-quote {
+    flex-basis: 25%;
+    position: relative;
+    /* border: solid 2px white; */
+}
+
+.mark-quote p {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    width: 60%;
+    padding: 10px;
+    color: #bde3fa;
+    background: rgb(230, 57, 7);
+    background: linear-gradient(180deg, rgba(230, 57, 70, 0.8) 0%, rgba(23, 34, 51, 0.2) 62%);
+}
+
+.project-section {
+    flex-basis: 75%;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    width: 220px;
+    height: 320px;
+    background-color: #c5c5c5;
+    margin: 0 20px 15px 0;
+    border-radius: 20px;
+}
+
+/* Footer-section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+footer .nav-section p {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-section .bottom-navigation ul {
+    display: flex;
+    margin-top: 20px;
+}
+
+.bottom-navigation li,
+.bottom-navigation span {
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+footer .interaction {
+    flex-basis: 50%;
+}
+
+.interaction p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.interaction form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    color: black;
+}
+
+form label,
+input {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+form input {
+    height: 40px;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    font: 1.1rem "Barlow Semi Condensed", sans-serif;
+}
+
+form textarea {
+    display: block;
+    margin: 1em 0;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 0.5rem;
+    padding: 1.5em 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+form .send-btn {
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background-color: #bad7e9;
+    color: black;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+form .send-btn:hover {
+    background-color: #8799a5;
+}
+
+@media (max-width: 576px) {
+    .hero-background {
+        height: auto;
+    }
+
+    /* Mobile navigations */
+
+    .menu__toggle {
+        position: absolute;
+        z-index: 9999;
+        display: block;
+        cursor: pointer;
+
+        width: 1.5rem;
+        aspect-ratio: 1;
+        right: 2rem;
+        background: url("./Images/menu-btn.png") center center;
+        background-color: white;
+        border: none;
+    }
+
+    .menu__toggle[aria-expanded="true"] {
+        position: fixed;
+    }
+
+    .primary__navigation {
+        position: fixed;
+        inset: 0 0 0 40%;
+        gap: 1.5rem;
+        z-index: 1000;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2rem;
+
+        background: hsl(0 0% 0% / 0.5);
+        backdrop-filter: blur(0.2rem);
+
+        transform: translateX(100%);
+        transition: transform 350ms ease-in-out;
+
+        font-size: 1.1rem;
+    }
+
+    /* is primary nav shown */
+
+    .primary__navigation[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .primary__navigation a > span {
+        display: inline;
+    }
+
+    .hero-article {
+        flex-direction: column;
+        text-align: center;
+        margin: 3em 0 4em 0;
+    }
+
+    .intro-text {
+        order: 2;
+    }
+
+    .intro-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro-text p {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .hero-article .hero-img {
+        order: 1;
+        width: 350px;
+        height: 250px;
+    }
+
+    /* about me section */
+
+    .second-article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 150px;
+    }
+
+    .personal-info {
+        text-align: center;
+        margin-top: 2em;
+    }
+
+    .personal-info .name-text {
+        font-size: 1.5rem;
+    }
+
+    .personal-info .des-text {
+        font-size: 0.9rem;
+    }
+
+    /* my project section */
+
+    .myProject-text {
+        text-align: center;
+    }
+
+    .my-projects {
+        flex-direction: column;
+    }
+
+    .mark-quote p {
+        width: 100%;
+        font-size: 1.5rem;
+        font-weight: 300;
+        text-decoration: none;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .project-section {
+        flex-basis: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: normal;
+    }
+
+    .project-section .project-box {
+        width: 80%;
+    }
+
+    /* footer section */
+
+    footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .interaction {
+        order: 1;
+        margin-bottom: 5em;
+    }
+
+    .nav-section {
+        order: 2;
+        margin-bottom: 3em;
+    }
+
+    footer .nav-section p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 1.3rem;
+    }
+
+    .bottom-navigation ul {
+        justify-content: center;
+    }
+
+    .bottom-navigation li,
+    span {
+        margin: 0 10px;
+    }
+}
