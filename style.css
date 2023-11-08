@@ -153,6 +153,16 @@ html {
     display: flex;
     margin-top: 5em;
     width: 100%;
+
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1s;
+    /* border: 2px solid white; */
+}
+
+.second-article.show {
+    transform: translateX(0px);
+    opacity: 1;
 }
 
 .profile {
@@ -208,6 +218,7 @@ hr {
 .my-projects {
     display: flex;
     margin-top: 2em;
+
     /* height: 100vh; */
 }
 
