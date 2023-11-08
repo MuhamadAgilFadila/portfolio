@@ -5,6 +5,7 @@ const menuToggleBtn = document.querySelector('.menu__toggle');
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         entry.target.classList.toggle("show", entry.isIntersecting)
+        if (entry.isIntersecting) observer.unobserve(entry.target)
     })
 }, {
     threshold: 0.5,
@@ -12,7 +13,7 @@ const observer = new IntersectionObserver(entries => {
 
 
 observer.observe(document.querySelector('.second-article'));
-observer.observe(document.querySelector('.my-projects'));
+
 
 
 menuToggleBtn.addEventListener('click', () => {
