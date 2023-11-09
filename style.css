@@ -252,6 +252,27 @@ hr {
     background-color: #c5c5c5;
     margin: 0 20px 15px 0;
     border-radius: 20px;
+
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.project-box.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.project-box:nth-child(1) {
+    transition: 0.5s;
+}
+.project-box:nth-child(2) {
+    transition: 1.3s;
+}
+.project-box:nth-child(3) {
+    transition: 1.5s;
+}
+.project-box:nth-child(4) {
+    transition: 1.8s;
 }
 
 /* Footer-section */
@@ -348,6 +369,14 @@ form .send-btn:hover {
 @media (max-width: 576px) {
     .hero-background {
         height: auto;
+    }
+
+    /* unAnimate on Mobile */
+    .second-article,
+    .project-box {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
     }
 
     /* Mobile navigations */
