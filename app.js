@@ -30,3 +30,8 @@ menuToggleBtn.addEventListener('click', () => {
     }
 
 })
+
+// getting started btn
+document.querySelector('.get-started-btn').onclick = () => {
+    document.querySelector('#aboutMe').scrollIntoView();
+}
