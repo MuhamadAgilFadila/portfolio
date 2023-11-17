@@ -618,6 +618,10 @@ form .send-btn:hover {
         align-self: center;
     }
 
+    .lang-icons {
+        justify-content: center;
+    }
+
     /* Education Section */
 
     .schools {
