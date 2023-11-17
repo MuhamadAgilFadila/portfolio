@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Barlow+Semi+Condensed:wght@300;400;700&family=Poppins:wght@200;300;400;700&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
@@ -72,14 +74,51 @@
                 <div class="personal-info">
                     <p>
                         <span class="aboutme-text">About Me</span>
-                        <span class="name-text">Hi, Im <br> <span>Muhamad Agil Fadila</span>
-                        </span>
+                        <span class="name-text">Hi, Im </span>
+                        <span class="name-text">Muhamad Agil Fadila</span>
                         <span class="des-text">
                             Im an Early Self-taught front-end web developer and still learning though. so this personal
                             blog is my very first project and im gonna share my other projects in this website. I am an
                             Informatics Engineering Student of STMIK IKMI Unversity in Indonesia
                         </span>
                     </p>
+                    <div class="fav-langs">
+                        <span class="skill-text">Favourite Languages</span>
+                        <div class="lang-icons">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original-wordmark.svg" />
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain-wordmark.svg" />
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="educations">
+                <span class="edu-text">Educations</span>
+                <div class="schools">
+                    <div class="school">
+                        <p>sdn kesambi dalam II</p>
+                        <p>Jl. Lapang Bola No. 11, DRAJAT, Kec. Kesambi, Kota Cirebon Prov. Jawa Barat</p>
+                    </div>
+                    <div class="school">
+                        <p>smpn 10 kota cirebon</p>
+                        <p>Jl. Merdeka No.28 Cirebon, Lemahwungkuk, Kec. Lemahwungkuk, Kota Cirebon Prov. Jawa Barat</p>
+                    </div>
+                    <div class="school">
+                        <p>smk wahidin kota cirebon</p>
+                        <p>Jl. Dr. Wahidin No. 21, Sukapura, Kejaksan, Sukapura, Kec. Kejaksan, Kota Cirebon, Jawa Barat
+                        </p>
+                        <p>Major: Network Engineering</p>
+                    </div>
+                    <div class="school">
+                        <p>stmik ikmi kota cirebon</p>
+                        <p> Jl. Perjuangan No.10B, Karyamulya, Kec. Kesambi, Kota Cirebon, Jawa Barat</p>
+                        <p>Major: Computer Science</p>
+                    </div>
                 </div>
             </article>
             <hr>
@@ -101,17 +140,15 @@
                     <p>Muhamad Agil Fadila</p>
                     <nav class="bottom-navigation">
                         <ul>
-                            <a href="#">Home</a>
-                            <span>|</span>
-                            <a href="#aboutMe">About Me</a>
-                            <span>|</span>
-                            <a href="#myProjects">My Projects</a>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#aboutMe">About</a></li>
+                            <li><a href="#myProjects">Project</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="interaction">
                     <p>Get in Touch</p>
-                    <form action="https://httpbin.org/post" method="post">
+                    <form action="mailto:muhamadagil.contact@gmail.com" method="get" enctype="text/plain">
                         <label for="name">Name</label>
                         <input type="text" name="userName" id="name" required autocomplete="name">
                         <label for="email">Email</label>

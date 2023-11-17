@@ -17,6 +17,9 @@ projectBoxes.forEach(box => {
     observer.observe(box)
 })
 
+document.querySelectorAll('.school').forEach(school => {
+    observer.observe(school)
+})
 
 menuToggleBtn.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
